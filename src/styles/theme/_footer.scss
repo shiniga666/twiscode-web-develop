@@ -1,0 +1,191 @@
+//--------- start footer Area -------------//
+
+.footer-area {
+  background: #000000;
+  padding-top: 25px;
+  padding-bottom: 1px;
+  h6 {
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+}
+.copy-right-text {
+  i,
+  a {
+    color: $primary-color;
+  }
+}
+.no-area{
+  background: #202020;
+  padding-top: 55px;
+  padding-bottom: 1px;
+}
+.telepon{
+  margin-left: -375px;
+  width: 40px;
+}
+.email{
+  margin-left: 380px;
+  width: 40px;
+}
+.no{
+  margin-left: 10px;
+}
+.location{
+  width: 37px;
+  margin-left: 450px;
+  margin-top: -70px;
+  width: 33px;
+}
+.no-social {
+  a {
+    border-radius: 50%;
+    float: right;
+    padding-right: 15px;
+    @include transition();
+    &:hover {
+      i {
+        color: $primary-color;
+      }
+    }
+  }
+  i {
+    color: #cccccc;
+    @include transition();
+  }
+  @include media-breakpoint-down(md) {
+    text-align: left;
+  }
+}
+.footer-social {
+  a {
+    float: right;
+    padding-right: 15px;
+    @include transition();
+    &:hover {
+      i {
+        color: $primary-color;
+      }
+    }
+  }
+  i {
+    color: #cccccc;
+    @include transition();
+  }
+  @include media-breakpoint-down(md) {
+    text-align: left;
+  }
+}
+
+.single-footer-widget {
+  input {
+    border: none;
+    width: 80% !important;
+    font-weight: 300;
+    background: #f9f9ff;
+    padding-left: 20px;
+    border-radius: 0;
+    font-size: 14px;
+    padding: 10px 18px;
+    border: 1px solid #f9f9ff;
+    &:focus {
+      background: #f9f9ff;
+      box-shadow: none;
+      border: 1px solid #f9f9ff;
+    }
+  }
+
+  .bb-btn {
+    color: $primary-color;
+    color: #fff;
+    font-weight: 300;
+    border-radius: 0;
+    z-index: 9999;
+    cursor: pointer;
+  }
+
+  .info {
+    position: absolute;
+    margin-top: 50px;
+    color: #fff;
+    font-size: 12px;
+    &.valid {
+      color: green;
+    }
+    &.error {
+      color: red;
+    }
+  }
+
+  .click-btn {
+    background-color: $primary-color;
+    color: #fff;
+    border-radius: 0;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 7px 12px;
+    border: 0;
+  }
+
+  ::-moz-selection {
+    /* Code for Firefox */
+    background-color: #191919 !important;
+    color: $text-color;
+  }
+  ::selection {
+    background-color: #191919 !important;
+    color: $text-color;
+  }
+  ::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: $text-color;
+    font-weight: 300;
+  }
+  :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: $text-color;
+    opacity: 1;
+    font-weight: 300;
+  }
+  ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: $text-color;
+    opacity: 1;
+    font-weight: 300;
+  }
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $text-color;
+    font-weight: 300;
+  }
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $text-color;
+    font-weight: 300;
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .social-widget {
+    margin-top: 30px;
+  }
+}
+
+.footer-text {
+  padding-top: 20px;
+  margin-bottom: 30px;
+  color: #fff;
+  font-weight: 200;
+  a,
+  i {
+    color: $primary-color;
+  }
+}
+
+//--------- end footer Area -------------//
